@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "dedsafio4_mecanicas",
+  "version": "${version}",
+  "name": "DEDSAFIO4 Mecánicas",
+  "description": "Mecánicas extra para las ruletas de DEDSAFIO4. Se controlan con /mecanica.",
+  "authors": ["Tú"],
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.noxsafio.mecanicas.Mecanicas"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": ">=0.100.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
