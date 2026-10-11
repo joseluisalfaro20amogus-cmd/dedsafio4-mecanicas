@@ -20,8 +20,10 @@ jobs:
         run: |
           cd "$(dirname "$(find . -name build.gradle -not -path './.git/*' | head -1)")"
           gradle build
+          ls -la build/libs
       - name: Guardar el jar
         uses: actions/upload-artifact@v4
         with:
           name: dedsafio4-mecanicas-jar
           path: "**/build/libs/dedsafio4-mecanicas-1.0.0.jar"
+          if-no-files-found: error
